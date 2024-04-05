@@ -2,7 +2,7 @@ $email  = htmlspecialchars($_POST['email']);
 $password = htmlspecialchars($_POST['password']);
 
 // Database connection
-$con = new mysqli("localhost", "root", "password", "database3");
+$con = new mysqli("localhost", "root", "[your_database_password]", "[your_database_name]");
 if ($con->connect_error) {
     die("Failed to connect : " . $con->connect_error);
 } else {
